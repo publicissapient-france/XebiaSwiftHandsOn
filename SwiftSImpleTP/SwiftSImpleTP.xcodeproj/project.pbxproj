@@ -75,13 +75,13 @@
 		421A52E0194F740800DB0F30 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				49FCD82D194F7FC20069ABD9 /* E01_Struct.swift */,
+				4998157D194F8EB000648A72 /* E02_Class.swift */,
+				49087633194F9B66000A6A22 /* E03_Enum.swift */,
 				421A52E6194F744000DB0F30 /* E04_Optionals.swift */,
 				50914708194F78A70089BC57 /* E05_Closure.swift */,
 				5091470A194F794F0089BC57 /* E06_Pattern.swift */,
 				5091470C194F795B0089BC57 /* E07_Generic.swift */,
-				49FCD82D194F7FC20069ABD9 /* E01_Struct.swift */,
-				4998157D194F8EB000648A72 /* E02_Class.swift */,
-				49087633194F9B66000A6A22 /* E03_Enum.swift */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
