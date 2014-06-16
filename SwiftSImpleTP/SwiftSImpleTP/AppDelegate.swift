@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
         
+        let vc = UIViewController()
+        self.window!.rootViewController = vc
+        
         runExercises()
         
         return true
