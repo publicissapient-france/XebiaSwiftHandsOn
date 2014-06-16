@@ -27,6 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func runExercises() {
         runExercise04()
+        runExercise05()
+        runExercise06()
+        runExercise07()
     }
 }
 
