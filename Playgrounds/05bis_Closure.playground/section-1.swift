@@ -10,7 +10,7 @@ Closure expressions are unnamed closures written in a lightweight syntax that ca
 
 
 /************************
- Global Function
+Global Function
 ************************/
 
 // Func Type
@@ -77,6 +77,7 @@ sort(names, >)
 /************************
 Nested Functions
 ************************/
+
 func chooseStepFunction(increment: Int, backwards: Bool) -> (Int) -> Int {
     func stepForward(input: Int) -> Int {
         return input + increment    // capture 'increment'
@@ -183,4 +184,5 @@ class C {
         return
     }
 }
+
 
