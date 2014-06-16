@@ -12,6 +12,9 @@
 		421A52E7194F744000DB0F30 /* E04_Optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421A52E6194F744000DB0F30 /* E04_Optionals.swift */; };
 		42414F4519485D4F00E61AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42414F4419485D4F00E61AAF /* AppDelegate.swift */; };
 		42414F4719485D4F00E61AAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42414F4619485D4F00E61AAF /* Images.xcassets */; };
+		49087634194F9B66000A6A22 /* E03_Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49087633194F9B66000A6A22 /* E03_Enum.swift */; };
+		4998157E194F8EB000648A72 /* E02_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4998157D194F8EB000648A72 /* E02_Class.swift */; };
+		49FCD82E194F7FC20069ABD9 /* E01_Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FCD82D194F7FC20069ABD9 /* E01_Struct.swift */; };
 		50914709194F78A70089BC57 /* E05_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50914708194F78A70089BC57 /* E05_Closure.swift */; };
 		5091470B194F794F0089BC57 /* E06_Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5091470A194F794F0089BC57 /* E06_Pattern.swift */; };
 		5091470D194F795B0089BC57 /* E07_Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5091470C194F795B0089BC57 /* E07_Generic.swift */; };
@@ -43,6 +46,9 @@
 		42414F4419485D4F00E61AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42414F4619485D4F00E61AAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		42414F4C19485D4F00E61AAF /* SwiftSImpleTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSImpleTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49087633194F9B66000A6A22 /* E03_Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E03_Enum.swift; sourceTree = "<group>"; };
+		4998157D194F8EB000648A72 /* E02_Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E02_Class.swift; sourceTree = "<group>"; };
+		49FCD82D194F7FC20069ABD9 /* E01_Struct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E01_Struct.swift; sourceTree = "<group>"; };
 		50914708194F78A70089BC57 /* E05_Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E05_Closure.swift; sourceTree = "<group>"; };
 		5091470A194F794F0089BC57 /* E06_Pattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E06_Pattern.swift; sourceTree = "<group>"; };
 		5091470C194F795B0089BC57 /* E07_Generic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E07_Generic.swift; sourceTree = "<group>"; };
@@ -73,6 +79,9 @@
 				50914708194F78A70089BC57 /* E05_Closure.swift */,
 				5091470A194F794F0089BC57 /* E06_Pattern.swift */,
 				5091470C194F795B0089BC57 /* E07_Generic.swift */,
+				49FCD82D194F7FC20069ABD9 /* E01_Struct.swift */,
+				4998157D194F8EB000648A72 /* E02_Class.swift */,
+				49087633194F9B66000A6A22 /* E03_Enum.swift */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -221,6 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4998157E194F8EB000648A72 /* E02_Class.swift in Sources */,
+				49087634194F9B66000A6A22 /* E03_Enum.swift in Sources */,
 				5091470D194F795B0089BC57 /* E07_Generic.swift in Sources */,
 				421A52E4194F741400DB0F30 /* Coach.swift in Sources */,
 				421A52E7194F744000DB0F30 /* E04_Optionals.swift in Sources */,
@@ -228,6 +239,7 @@
 				42414F4519485D4F00E61AAF /* AppDelegate.swift in Sources */,
 				5091470B194F794F0089BC57 /* E06_Pattern.swift in Sources */,
 				50914709194F78A70089BC57 /* E05_Closure.swift in Sources */,
+				49FCD82E194F7FC20069ABD9 /* E01_Struct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
