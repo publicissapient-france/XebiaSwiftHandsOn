@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
         
+        let vc = UIViewController()
+        self.window!.rootViewController = vc
+        
         runExercises()
         
         return true
@@ -27,6 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func runExercises() {
         runExercise04()
+        runExercise05()
+        runExercise06()
+        runExercise07()
     }
 }
 
