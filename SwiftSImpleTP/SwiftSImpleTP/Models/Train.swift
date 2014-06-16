@@ -12,8 +12,14 @@ class Train {
     var restaurantCoach:Coach?
     var coaches:Array<Coach?>
     
+    var agent: Agent
+    var status: Status
+    
     init() {
-        self.coaches = Array<Coach>()
+        agent = .SNCF
+        status = .OnTime
+        
+        coaches = Array<Coach>()
     }
     
     func createUnnamedRestaurantCoach() {
@@ -40,3 +46,17 @@ class Train {
         return nil
     }
 }
+
+extension Train {
+    enum Status {
+        case OnTime
+        case Delayed(Int, String)
+        case Canceled
+    }
+    
+    enum Agent {
+        case RATP
+        case SNCF
+    }
+}
+
