@@ -11,9 +11,10 @@ import Foundation
 func runExercise06() {
     runExercise06_01()
     runExercise06_02()
+    runExercise06_03()
 }
 
-
+// Simple Pattern on Enum (with associated value)
 func runExercise06_01() {
     let rerA = Train()
     rerA.agent = .RATP
@@ -33,6 +34,7 @@ func runExercise06_01() {
     }
 }
 
+// Where Clause
 func runExercise06_02() {
     let rerA = Train()
     rerA.status = .Delayed(15, "Voyageur malade")
@@ -69,7 +71,47 @@ func runExercise06_02() {
                 return "RAS"
         }
     }
-    println(answer)
+    println("Where Clause: \(answer)")
 }
 
+// Pattern Compose
+func runExercise06_03() {
+    enum VacationStatus {
+        case Traveling(Train.Status)
+        case Relaxing(daysLeft: Int)
+    }
+    
+    let v1: VacationStatus = .Relaxing(daysLeft: 3)
+    let v2: VacationStatus = .Traveling(.OnTime)
+    let v3: VacationStatus = .Traveling(.Delayed(10, "Too much wind"))
+    let v4: VacationStatus = .Traveling(.Delayed(1000, "unknown"))
+    
+    let vacs = [v1, v2, v3, v4]
+    
+// TODO
+    // switch on vacation status *and* train status. Separate small (<60min) and large(>=60min) delay
+    let answer: String[] = vacs.map {
+        (status: VacationStatus) -> String in
+        switch status {
+            case .Relaxing(_):
+                return "cool time"
+            
+            case .Traveling(.OnTime):
+                return "Je vais être à l'heure"
+            
+            case .Traveling(.Delayed(let retard, _)) where retard < 60:
+                return "Je serais en retard"
+            
+            case .Traveling(.Delayed(let retard, _)) where retard >= 60:
+                return "vraiment en retard"
+            
+            case .Traveling(.Canceled):
+                return "OMG!"
+            
+            default:
+                return ""
+        }
+    }
+    println("Pattern Compose: \(answer)")
+}
 
