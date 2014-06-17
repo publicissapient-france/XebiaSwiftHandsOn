@@ -9,22 +9,23 @@
 import Foundation
 
 func runExercise04() {
+//    runExercise04_00()
     runExercise04_01()
-    runExercise04_02()
+//    runExercise04_02()
     runExercise04_03()
     runExercise04_04()
     runExercise04_05()
-    runExercise04_06()
+//    runExercise04_06()
     runExercise04_07()
 }
 
 
 func runExercise04_00() {
-    //        var hello:String
-    //        println(hello)
+//    var hello:String
+//    println(hello)
     
-    //        id hello;
-    //        NSLog(@"%@", hello);
+//    id hello;
+//    NSLog(@"%@", hello);
 }
 
 

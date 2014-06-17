@@ -14,5 +14,4 @@ func runExercise07() {
 
 
 func runExercise07_01() {
-    
 }

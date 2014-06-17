@@ -9,7 +9,11 @@
 import UIKit
 
 class Coach {
+    
+    var lastMaintenanceForOldCoach = NSDate(timeIntervalSinceNow: -3600 * 24 * 30); // One month ago
+    
     var name:String?
+    var lastMaintenance:NSDate?
     
     init() {
         
@@ -17,5 +21,18 @@ class Coach {
     
     init(name:String) {
         self.name = name
+    }
+    
+    init(lastMaintenance:NSDate!) {
+        self.lastMaintenance = lastMaintenance
+    }
+    
+    func getAirConditioningStatus() -> (active:Bool, reason:String?) {
+        if let lastMaintenanceU = self.lastMaintenance {
+            if lastMaintenanceU.compare(self.lastMaintenanceForOldCoach) == NSComparisonResult.OrderedDescending {
+                return (true, nil)
+            }
+        }
+        return (false, "A/C is out of service. Please use your bike.")
     }
 }
