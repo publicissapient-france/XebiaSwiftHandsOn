@@ -8,19 +8,19 @@
 
 import Foundation
 
-func runExercise04() {
-//    runExercise04_00()
-    runExercise04_01()
-//    runExercise04_02()
-    runExercise04_03()
-    runExercise04_04()
-    runExercise04_05()
-//    runExercise04_06()
-    runExercise04_07()
+func runExercise05() {
+//    runExercise05_00()
+    runExercise05_01()
+//    runExercise05_02()
+    runExercise05_03()
+    runExercise05_04()
+    runExercise05_05()
+//    runExercise05_06()
+    runExercise05_07()
 }
 
 
-func runExercise04_00() {
+func runExercise05_00() {
 //    var hello:String
 //    println(hello)
     
@@ -29,7 +29,7 @@ func runExercise04_00() {
 }
 
 
-func runExercise04_01() {
+func runExercise05_01() {
     var hello:String? = "Hello, Swift"
     
     // Wrapped
@@ -40,7 +40,7 @@ func runExercise04_01() {
 }
 
 
-func runExercise04_02() {
+func runExercise05_02() {
     var hello:String?
     
     // Wrapped
@@ -50,7 +50,7 @@ func runExercise04_02() {
     println(hello!)
 }
 
-func runExercise04_03() {
+func runExercise05_03() {
     var myTrain:Train?
     var restaurantCoachName = myTrain?.restaurantCoach?.name
     if restaurantCoachName {
@@ -59,7 +59,7 @@ func runExercise04_03() {
 }
 
 
-func runExercise04_04() {
+func runExercise05_04() {
     var myTrain:Train? = Train()
     myTrain?.createUnnamedRestaurantCoach()
     if let restaurantCoachName = myTrain?.restaurantCoach?.name {
@@ -68,7 +68,7 @@ func runExercise04_04() {
 }
 
 
-func runExercise04_05() {
+func runExercise05_05() {
     var myTrain:Train? = Train()
     myTrain?.createItalianRestaurantCoach()
     if let restaurantCoachName = myTrain?.restaurantCoach?.name {
@@ -77,13 +77,13 @@ func runExercise04_05() {
 }
 
 
-func runExercise04_06() {
+func runExercise05_06() {
     var myTrain:Train? = Train()
     println(myTrain?.restaurantCoach!.name)
 }
 
 
-func runExercise04_07() {
+func runExercise05_07() {
     var myTrain:Train = Train()
     myTrain.createFrenchRestaurantCoach()
     

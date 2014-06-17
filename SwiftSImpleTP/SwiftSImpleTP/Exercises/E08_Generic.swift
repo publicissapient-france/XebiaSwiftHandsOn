@@ -8,10 +8,10 @@
 
 import Foundation
 
-func runExercise07() {
-    runExercise07_01()
+func runExercise08() {
+    runExercise08_01()
 }
 
 
-func runExercise07_01() {
+func runExercise08_01() {
 }

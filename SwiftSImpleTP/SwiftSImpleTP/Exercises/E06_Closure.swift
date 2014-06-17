@@ -8,15 +8,15 @@
 
 import Foundation
 
-func runExercise05() {
-    runExercise05_01()
-    runExercise05_02()
-    runExercise05_03()
-    runExercise05_04()
+func runExercise06() {
+    runExercise06_01()
+    runExercise06_02()
+    runExercise06_03()
+    runExercise06_04()
 }
 
 
-func runExercise05_01() {
+func runExercise06_01() {
     let array = ["allo", "Paris", "chat", "chien"]
     var upper: Array<String> = []
     
@@ -32,7 +32,7 @@ func runExercise05_01() {
     println("uppercase array: \(upper)")
 }
 
-func runExercise05_02() {
+func runExercise06_02() {
     let array = ["allo", "Paris", "chat", "chien"]
     var answer: Array<String> = []
     
@@ -45,7 +45,7 @@ func runExercise05_02() {
     println("array without word begining by 'c': \(answer)")
 }
 
-func runExercise05_03() {
+func runExercise06_03() {
     let array = ["Cat.JPG", "DOG.png", "House.jpg", "You.gif", "her.GIF"]
     var answer: Array<String> = []
 
@@ -60,7 +60,7 @@ func runExercise05_03() {
     println("only jpg: \(answer)")
 }
 
-func runExercise05_04() {
+func runExercise06_04() {
     func makeIncrementor() -> (Int) -> Int {
         func incrementor(a: Int) -> Int {
             return a + 1

@@ -8,14 +8,14 @@
 
 import Foundation
 
-func runExercise06() {
-    runExercise06_01()
-    runExercise06_02()
-    runExercise06_03()
+func runExercise07() {
+    runExercise07_01()
+    runExercise07_02()
+    runExercise07_03()
 }
 
 // Simple Pattern on Enum (with associated value)
-func runExercise06_01() {
+func runExercise07_01() {
     let rerA = Train()
     rerA.agent = .RATP
     rerA.status = .Delayed(15, "Voyageur malade")
@@ -35,7 +35,7 @@ func runExercise06_01() {
 }
 
 // Where Clause
-func runExercise06_02() {
+func runExercise07_02() {
     let rerA = Train()
     rerA.status = .Delayed(15, "Voyageur malade")
     
@@ -75,7 +75,7 @@ func runExercise06_02() {
 }
 
 // Pattern Compose
-func runExercise06_03() {
+func runExercise07_03() {
     enum VacationStatus {
         case Traveling(Train.Status)
         case Relaxing(daysLeft: Int)
