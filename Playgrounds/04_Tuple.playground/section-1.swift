@@ -29,3 +29,11 @@ func sayHello(params: (guy1:String, guy2:String)) -> String {
     return "Hello \(params.guy1) & \(params.guy2)"
 }
 sayHello(("Stan", "Laurel"))
+
+// Enumeration
+let populationForCountry = ["France": 65700, "England": 62200, "Italy": 60920]
+
+for (country, population) in populationForCountry {
+    var info = ("\(country)s is home to \(population) people")
+    println(info)
+}
