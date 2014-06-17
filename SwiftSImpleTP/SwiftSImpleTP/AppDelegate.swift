@@ -30,10 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func runExercises() {
         runExercise03()
+        runExercise01()
+        runExercise02()
+        runExercise03()
         runExercise04()
         runExercise05()
         runExercise06()
         runExercise07()
+        runExercise08()
     }
 }
 

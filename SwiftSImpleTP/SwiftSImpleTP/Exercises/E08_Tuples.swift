@@ -8,18 +8,18 @@
 
 import Foundation
 
-func runExercise03() {
-    runExercise03_00()
-    runExercise03_01()
-    runExercise03_02()
-    runExercise03_03()
-    runExercise03_04()
+func runExercise08() {
+    runExercise08_00()
+    runExercise08_01()
+    runExercise08_02()
+    runExercise08_03()
+    runExercise08_04()
     
-    runExercise03_05()
+    runExercise08_05()
 }
 
 
-func runExercise03_00() {
+func runExercise08_00() {
     // Air conditioning status:
     // We would like to know if a coach has or not an air conditioning system
     // and, if not, we would like to know the reason
@@ -33,7 +33,7 @@ func runExercise03_00() {
 
 
 // Basic tuple variable
-func runExercise03_01() {
+func runExercise08_01() {
     var oldCoach = Coach(lastMaintenance:NSDate(timeIntervalSince1970: 0))
     
     var (active:Bool, reason:String?) = oldCoach.getAirConditioningStatus()
@@ -46,7 +46,7 @@ func runExercise03_01() {
 
 
 // Type inference
-func runExercise03_02() {
+func runExercise08_02() {
     var recentCoach = Coach(lastMaintenance: NSDate(timeIntervalSinceNow: 0))
     
     var (active, reason) = recentCoach.getAirConditioningStatus()
@@ -59,7 +59,7 @@ func runExercise03_02() {
 
 
 // Inference
-func runExercise03_03() {
+func runExercise08_03() {
     var oldCoach = Coach(lastMaintenance: NSDate(timeIntervalSince1970: 0))
     var combinedStatus = oldCoach.getAirConditioningStatus()
     
@@ -69,7 +69,7 @@ func runExercise03_03() {
 }
 
 // Positioning
-func runExercise03_04() {
+func runExercise08_04() {
     var recentCoach = Coach(lastMaintenance: NSDate(timeIntervalSinceNow: 0))
     var combinedStatus = recentCoach.getAirConditioningStatus()
     
@@ -85,7 +85,7 @@ func runExercise03_04() {
 
 
 // Dictionaries
-func runExercise03_05() {
+func runExercise08_05() {
     var mySeat = 24
     var myTravelMates = [25: "JC", 26: "Pascal", 27: "Simone"]
     for (seat, name) in myTravelMates {
