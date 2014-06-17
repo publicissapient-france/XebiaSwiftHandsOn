@@ -17,6 +17,7 @@ a
 //
 
 // Basic
+let c = 6
 var response: Int
 switch c {
     case 1: response = 1
