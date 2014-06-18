@@ -27,21 +27,42 @@
 			containerPortal = 42414F3719485D4F00E61AAF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 42414F3E19485D4F00E61AAF;
-			remoteInfo = SwiftSImpleTP;
+			remoteInfo = SwiftSimpleTP;
 		};
 		421A52EE194FA79D00DB0F30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 42414F3719485D4F00E61AAF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 42414F3E19485D4F00E61AAF;
-			remoteInfo = SwiftSImpleTP;
+			remoteInfo = SwiftSimpleTP;
+		};
+		42400B9219519FDD00957682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42414F3719485D4F00E61AAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42414F3E19485D4F00E61AAF;
+			remoteInfo = SwiftSimpleTP;
+		};
+		42400B9419519FDD00957682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42414F3719485D4F00E61AAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42414F3E19485D4F00E61AAF;
+			remoteInfo = SwiftSimpleTP;
+		};
+		42400B9619519FE300957682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42414F3719485D4F00E61AAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42414F3E19485D4F00E61AAF;
+			remoteInfo = SwiftSimpleTP;
 		};
 		42414F4D19485D4F00E61AAF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 42414F3719485D4F00E61AAF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 42414F3E19485D4F00E61AAF;
-			remoteInfo = SwiftSImpleTP;
+			remoteInfo = SwiftSimpleTP;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,11 +71,11 @@
 		421A52E3194F741400DB0F30 /* Train.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		421A52E6194F744000DB0F30 /* E05_Optionals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E05_Optionals.swift; sourceTree = "<group>"; };
 		421A52EC194FA79900DB0F30 /* E04_Tuples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E04_Tuples.swift; sourceTree = "<group>"; };
-		42414F3F19485D4F00E61AAF /* SwiftSImpleTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSImpleTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42414F3F19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSimpleTP.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42414F4319485D4F00E61AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42414F4419485D4F00E61AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42414F4619485D4F00E61AAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		42414F4C19485D4F00E61AAF /* SwiftSImpleTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSImpleTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42414F4C19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSimpleTP.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49087633194F9B66000A6A22 /* E03_Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E03_Enum.swift; sourceTree = "<group>"; };
 		4998157D194F8EB000648A72 /* E02_Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E02_Class.swift; sourceTree = "<group>"; };
 		49FCD82D194F7FC20069ABD9 /* E01_Struct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E01_Struct.swift; sourceTree = "<group>"; };
@@ -108,7 +129,7 @@
 		42414F3619485D4F00E61AAF = {
 			isa = PBXGroup;
 			children = (
-				42414F4119485D4F00E61AAF /* SwiftSImpleTP */,
+				42414F4119485D4F00E61AAF /* SwiftSimpleTP */,
 				42414F4019485D4F00E61AAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,13 +137,13 @@
 		42414F4019485D4F00E61AAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42414F3F19485D4F00E61AAF /* SwiftSImpleTP.app */,
-				42414F4C19485D4F00E61AAF /* SwiftSImpleTPTests.xctest */,
+				42414F3F19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_rename.app */,
+				42414F4C19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		42414F4119485D4F00E61AAF /* SwiftSImpleTP */ = {
+		42414F4119485D4F00E61AAF /* SwiftSimpleTP */ = {
 			isa = PBXGroup;
 			children = (
 				421A52E1194F741400DB0F30 /* Models */,
@@ -131,7 +152,8 @@
 				42414F4619485D4F00E61AAF /* Images.xcassets */,
 				42414F4219485D4F00E61AAF /* Supporting Files */,
 			);
-			path = SwiftSImpleTP;
+			name = SwiftSimpleTP;
+			path = SwiftSimpleTP;
 			sourceTree = "<group>";
 		};
 		42414F4219485D4F00E61AAF /* Supporting Files */ = {
@@ -145,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42414F3E19485D4F00E61AAF /* SwiftSImpleTP */ = {
+		42414F3E19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42414F5619485D4F00E61AAF /* Build configuration list for PBXNativeTarget "SwiftSImpleTP" */;
+			buildConfigurationList = 42414F5619485D4F00E61AAF /* Build configuration list for PBXNativeTarget "SwiftSimpleTP.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				42414F3B19485D4F00E61AAF /* Sources */,
 				42414F3C19485D4F00E61AAF /* Frameworks */,
@@ -157,14 +179,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftSImpleTP;
-			productName = SwiftSImpleTP;
-			productReference = 42414F3F19485D4F00E61AAF /* SwiftSImpleTP.app */;
+			name = SwiftSimpleTP.temp_caseinsensitive_rename;
+			productName = SwiftSimpleTP;
+			productReference = 42414F3F19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		42414F4B19485D4F00E61AAF /* SwiftSImpleTPTests */ = {
+		42414F4B19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42414F5919485D4F00E61AAF /* Build configuration list for PBXNativeTarget "SwiftSImpleTPTests" */;
+			buildConfigurationList = 42414F5919485D4F00E61AAF /* Build configuration list for PBXNativeTarget "SwiftSimpleTP.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				42414F4819485D4F00E61AAF /* Sources */,
 				42414F4919485D4F00E61AAF /* Frameworks */,
@@ -176,10 +198,13 @@
 				42414F4E19485D4F00E61AAF /* PBXTargetDependency */,
 				421A52E9194F75B000DB0F30 /* PBXTargetDependency */,
 				421A52EF194FA79D00DB0F30 /* PBXTargetDependency */,
+				42400B9319519FDD00957682 /* PBXTargetDependency */,
+				42400B9519519FDD00957682 /* PBXTargetDependency */,
+				42400B9719519FE300957682 /* PBXTargetDependency */,
 			);
-			name = SwiftSImpleTPTests;
-			productName = SwiftSImpleTPTests;
-			productReference = 42414F4C19485D4F00E61AAF /* SwiftSImpleTPTests.xctest */;
+			name = SwiftSimpleTP.temp_caseinsensitive_renameTests;
+			productName = SwiftSimpleTPTests;
+			productReference = 42414F4C19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42414F3A19485D4F00E61AAF /* Build configuration list for PBXProject "SwiftSImpleTP" */;
+			buildConfigurationList = 42414F3A19485D4F00E61AAF /* Build configuration list for PBXProject "SwiftSimpleTP" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -212,8 +237,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42414F3E19485D4F00E61AAF /* SwiftSImpleTP */,
-				42414F4B19485D4F00E61AAF /* SwiftSImpleTPTests */,
+				42414F3E19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_rename */,
+				42414F4B19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_renameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,17 +292,32 @@
 /* Begin PBXTargetDependency section */
 		421A52E9194F75B000DB0F30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 42414F3E19485D4F00E61AAF /* SwiftSImpleTP */;
+			target = 42414F3E19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_rename */;
 			targetProxy = 421A52E8194F75B000DB0F30 /* PBXContainerItemProxy */;
 		};
 		421A52EF194FA79D00DB0F30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 42414F3E19485D4F00E61AAF /* SwiftSImpleTP */;
+			target = 42414F3E19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_rename */;
 			targetProxy = 421A52EE194FA79D00DB0F30 /* PBXContainerItemProxy */;
+		};
+		42400B9319519FDD00957682 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42414F3E19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_rename */;
+			targetProxy = 42400B9219519FDD00957682 /* PBXContainerItemProxy */;
+		};
+		42400B9519519FDD00957682 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42414F3E19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_rename */;
+			targetProxy = 42400B9419519FDD00957682 /* PBXContainerItemProxy */;
+		};
+		42400B9719519FE300957682 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42414F3E19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_rename */;
+			targetProxy = 42400B9619519FE300957682 /* PBXContainerItemProxy */;
 		};
 		42414F4E19485D4F00E61AAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 42414F3E19485D4F00E61AAF /* SwiftSImpleTP */;
+			target = 42414F3E19485D4F00E61AAF /* SwiftSimpleTP.temp_caseinsensitive_rename */;
 			targetProxy = 42414F4D19485D4F00E61AAF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -365,9 +405,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = SwiftSImpleTP/Info.plist;
+				INFOPLIST_FILE = SwiftSimpleTP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftSimpleTP.temp_caseinsensitive_rename;
 			};
 			name = Debug;
 		};
@@ -376,16 +416,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = SwiftSImpleTP/Info.plist;
+				INFOPLIST_FILE = SwiftSimpleTP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftSimpleTP.temp_caseinsensitive_rename;
 			};
 			name = Release;
 		};
 		42414F5A19485D4F00E61AAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftSImpleTP.app/SwiftSImpleTP";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftSimpleTP.app/SwiftSimpleTP";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -394,10 +434,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SwiftSImpleTPTests/Info.plist;
+				INFOPLIST_FILE = SwiftSimpleTPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftSimpleTP.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -405,15 +445,15 @@
 		42414F5B19485D4F00E61AAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftSImpleTP.app/SwiftSImpleTP";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftSimpleTP.app/SwiftSimpleTP";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SwiftSImpleTPTests/Info.plist;
+				INFOPLIST_FILE = SwiftSimpleTPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftSimpleTP.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -421,7 +461,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42414F3A19485D4F00E61AAF /* Build configuration list for PBXProject "SwiftSImpleTP" */ = {
+		42414F3A19485D4F00E61AAF /* Build configuration list for PBXProject "SwiftSimpleTP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42414F5419485D4F00E61AAF /* Debug */,
@@ -430,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42414F5619485D4F00E61AAF /* Build configuration list for PBXNativeTarget "SwiftSImpleTP" */ = {
+		42414F5619485D4F00E61AAF /* Build configuration list for PBXNativeTarget "SwiftSimpleTP.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42414F5719485D4F00E61AAF /* Debug */,
@@ -439,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42414F5919485D4F00E61AAF /* Build configuration list for PBXNativeTarget "SwiftSImpleTPTests" */ = {
+		42414F5919485D4F00E61AAF /* Build configuration list for PBXNativeTarget "SwiftSimpleTP.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42414F5A19485D4F00E61AAF /* Debug */,
