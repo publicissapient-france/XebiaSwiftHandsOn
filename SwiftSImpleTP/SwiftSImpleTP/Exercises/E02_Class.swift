@@ -23,19 +23,13 @@ enum CarOption {
     case SpareWheel
 }
 
-class Car: Equatable, Printable {
+class Car: Printable {
     let brand: String
     let year: Int
     let model: String
-    var distance: Int = 0 {
-    didSet {
-        if (distance > 100_000) {
-            distance = 100_000
-        }
-    }
-    }
-    var options: Dictionary<CarOption, Bool>
-    var argus: Int { return distance/year }
+    // var distance: Int
+    let options: Dictionary<CarOption, Bool>
+    var argus: Int { return 0 }
     
     init(brand: String, model: String, year: Int) {
         self.brand = brand
@@ -44,22 +38,7 @@ class Car: Equatable, Printable {
         self.options = [:]
     }
     
-    convenience init(brand: String, model: String) {
-        self.init(brand: brand, model: model, year: 2014)
-    }
-    
-    subscript(option: CarOption) -> Bool? {
-        get { return self.options[option] }
-        set { self.options[option] = newValue }
-    }
-    
-    var description: String {
-    return "\(self.brand) \(self.model)"
-    }
-}
-
-func ==(lhs: Car, rhs: Car) -> Bool {
-    return (lhs.model == rhs.model) && (lhs.brand == lhs.brand);
+    var description: String { return "" }
 }
 
 /**
@@ -67,7 +46,8 @@ func ==(lhs: Car, rhs: Car) -> Bool {
  * Implement a convenient Car init which take brand and model as parameter and set year to 2014
  */
 func runExercise02_01() {
-    let clio1: Car = Car(brand: "Renault", model: "Clio")
+    // UNCOMMENT THIS LINE
+    // let clio1: Car = Car(brand: "Renault", model: "Clio")
 }
 
 /**
@@ -75,10 +55,11 @@ func runExercise02_01() {
 * Implement argus as a computed readonly property returning distance/year
 */
 func runExercise02_02() {
-    var car = Car(brand: "Renault", model: "Clio")
+    var car = Car(brand: "Renault", model: "Clio", year: 2014)
     
     assert(car.argus == 0)
-    car.distance = 50_000
+    // UNCOMMENT THIS LINE
+   // car.distance = 50_000
     assert(car.argus == 24)
 }
 
@@ -87,7 +68,7 @@ func runExercise02_02() {
  * Implement Printable protocol so that Car object print its brand + model
  */
 func runExercise02_03() {
-    var car =  Car(brand: "Renault", model: "Clio")
+    var car =  Car(brand: "Renault", model: "Clio", year: 2014)
     
     assert("\(car)" == "Renault Clio", "Implement Printable protocol");
 }
@@ -99,10 +80,11 @@ func runExercise02_03() {
 func runExercise02_04() {
     let megane: Car = Car(brand: "Renault", model: "Megane", year: 2012)
     let clio: Car = Car(brand: "Renault", model: "Clio", year: 2013)
-    let clio2: Car = Car(brand: "Renault", model: "Clio")
+    let clio2: Car = Car(brand: "Renault", model: "Clio", year: 2014)
     
-    assert(clio != megane)
-    assert(clio == clio2)
+    // UNCOMMENT THESE LINES
+    //assert(clio != megane)
+    //assert(clio == clio2)
 }
 
 /**
@@ -112,10 +94,11 @@ func runExercise02_04() {
  * (Uncomment exercise test lines)
 **/
 func runExercise02_05() {
-    var car = Car(brand: "Renault", model: "Clio")
+    var car = Car(brand: "Renault", model: "Clio", year: 2014)
 
-    car[.Airbag] = true
-    car[.SpareWheel] = false
+    // UNCOMMENT THESE LINES
+    //car[.Airbag] = true
+    //car[.SpareWheel] = false
     
     assert(car.options.count == 2)
     assert(car.options[.Airbag] == true)
@@ -127,8 +110,9 @@ func runExercise02_05() {
 ** Force distance to be <= 100 000 when setted
 */
 func runExercise02_06() {
-    var car = Car(brand: "Renault", model: "Clio")
+    var car = Car(brand: "Renault", model: "Clio", year: 2014)
 
-    car.distance = 101_000
-    assert(car.distance == 100_000, "Set car.distance to 100 000 when > 100 000")
+    // UNCOMMENT THESE LINES
+    // car.distance = 101_000
+    // assert(car.distance == 100_000, "Set car.distance to 100 000 when > 100 000")
 }

@@ -20,26 +20,9 @@ struct Position {
     var x:Float;
     var y:Float;
     
-    mutating func translate(translation: Float) {
-        self.x += translation;
-        self.y += translation;
+    func translate(translation: Float) {
+        // @TODO translate "x" and "y" by "translation"
     }
-}
-
-@infix func + (pos1: Position, pos2: Position) -> Position {
-    return Position(x: pos1.x + pos2.x, y: pos1.y + pos2.y)
-}
-
-@assignment func += (inout pos1: Position, pos2: Position) {
-    pos1 = pos1 + pos2
-}
-
-func update(inout data: Dictionary<String, String>) {
-    data["lang"] = "Swift"
-}
-
-func update(data: Array<String>) {
-    data[0] = "Ruby"
 }
 
 /**
@@ -47,9 +30,10 @@ func update(data: Array<String>) {
  * Set false to key "OK" AFTER initialization
 */
 func runExercise01_01() {
-    var dict = ["OK": true, "KO": false]
+    let dict = ["OK": true, "KO": false]
     
-    dict["OK"] = false
+    // UNCOMMENT THIS LINE!
+    // dict["OK"] = false
     assert(dict["OK"] == false, "set false to key 'OK' (AFTER Dictionary initialization)")
 }
 
@@ -61,7 +45,8 @@ func runExercise01_01() {
 func runExercise01_02() {
     var data = ["name": "Xebia", "lang": "ObjC"]
     
-    update(&data)
+    // UNCOMMENT THIS LINE
+    //update(&data)
     assert(data["lang"] == "Swift", "change lang to Swift into update function");
 }
 
@@ -73,7 +58,8 @@ func runExercise01_02() {
 func runExercise01_03() {
     var data = ["PHP", "Python"]
     
-    update(data)
+    // UNCOMMENT THIS LINE
+    //update(data)
     assert(data[0] == "Ruby", "Change data[0] into update function")
 }
 
@@ -95,8 +81,10 @@ func runExercise01_04() {
  */
 func runExercise01_05() {
     var pos = Position(x: 0, y: 200)
-    pos += Position(x: 10, y: -100)
     
-    assert(pos.x == 10, "implement == operator")
-    assert(pos.y == 100, "implement == operator")
+    // UNCOMMENT THIS LINE
+    //pos += Position(x: 10, y: -100)
+    
+    assert(pos.x == 10, "implement += operator")
+    assert(pos.y == 100, "implement += operator")
 }
