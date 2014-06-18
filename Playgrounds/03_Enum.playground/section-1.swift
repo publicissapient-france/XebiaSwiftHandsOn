@@ -10,25 +10,26 @@ enum UserState : Int {
 var s = UserState.LoggedOut
 s.toRaw()
 
+///
+
 enum LangEnum {
     case ObjC
     case Swift
 }
+
+///
 
 enum Response {
     case Error
     case Success(Int)
 }
 
+///
+
 var res = Response.Success(200)
 //res.toRaw()
 
-switch res {
-case .Success(let status):
-    println("status is \(status)")
-default:
-    "Not handled"
-}
+///
 
 switch res {
 case .Success(let status):
@@ -36,4 +37,3 @@ case .Success(let status):
 default:
     "Not handled"
 }
-
