@@ -2,35 +2,32 @@
 
 import UIKit
 
-var string = "hello" // var declaration
-let const = "hello"  // constant declaration
-
-string += " world"  // copy
-const += " world"   // code safety
+2.succ() // Int is a Struct
 
 ///
 
-var hello = "hello"
-var hello2 = hello
+var car = ["price": 10_000]
 
-hello == hello2
-hello += " world"
-hello == hello2
+upgradeCar(&car)
+car["price"]
 
 ///
 
-var dict = ["i":0, "j":1]
-var dict2 = dict
-
-dict == dict2
-dict["i"] = 1
-dict == dict2
+func upgradeCar(inout car: Dictionary<String, Int>) {
+    car["price"] = 20_000
+}
 
 ///
 
-var array = [0,1]
-var array2 = array.copy()
+var string = "hello" + " world"
 
-array == array2
-array[0] = 1
-array == array2
+///
+
+string += " \(2)" // Mutable String
+
+///
+
+let immutable = string
+//immutable += "No way"
+
+
