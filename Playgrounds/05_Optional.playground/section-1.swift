@@ -3,8 +3,21 @@
  ***********************/
 
 // Optional
-var optionalString: String? = "Hello"
+var optionalString: String?
+optionalString = "Hello"
 optionalString == nil
+
+// Le type optionnel a deux états possibles:
+// None and Some
+
+var finalValue:String
+switch optionalString {
+    case .None:
+        finalValue = "No Value"
+    
+    case .Some(let value):
+        finalValue = value
+}
 
 // Unwrapping
 var optionalStringUnwrapped = optionalString!
