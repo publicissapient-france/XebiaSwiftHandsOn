@@ -4,6 +4,7 @@ Pattern Matching
     test the structure of values
 
 ************************************/
+
 func multiReturn() -> (Int, Int) {
     return (5, 6)
 }
@@ -55,37 +56,17 @@ switch color {
         response = 0
 }
 
-// Optional
-let dict = ["k1": "dog", "k2":"cat"]
 
-var name: String?
-switch dict["k2"] {
-    case .Some(let listName):
-        name = listName
-
-    default:
-        name = nil
-}
-name
 
 // Where clause
-let color2 = (0.7, 0.7, 0.7, 1.0)
+var answer: String?
 
+let color2 = (0.7, 0.7, 0.7, 1.0)
 switch color2 {
     case let (r, g, b, 1.0) where r == g && g == b:
         println("Some shade of gray \(r)")
     
     default:
-        name = nil
-}
-
-// More Elaborate
-switch (dict["k1"], dict["k2"]) {
-    case (.Some(let a), .Some(let b))
-    where a.hasPrefix("d"):
-        println("a cat and a dog!")
-    
-    default:
-        name = nil
+        answer = nil
 }
 

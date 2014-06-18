@@ -2,38 +2,30 @@
 
 import UIKit
 
-enum UserState : Int {
+enum UserState : Int, Printable {
     case LoggedIn   = 0
     case LoggedOut  = 20
+    
+    var description: String {
+    switch self {
+        case .LoggedIn:
+            return "LoggedIn"
+        case .LoggedOut:
+            return "LoggedOut"
+    }
+    }
 }
 
 var s = UserState.LoggedOut
 s.toRaw()
+
+"s desc is \(s)" // Your 1st Playground bug!
+
+///
 
 enum LangEnum {
     case ObjC
     case Swift
 }
 
-enum Response {
-    case Error
-    case Success(Int)
-}
-
-var res = Response.Success(200)
-//res.toRaw()
-
-switch res {
-case .Success(let status):
-    println("status is \(status)")
-default:
-    "Not handled"
-}
-
-switch res {
-case .Success(let status):
-    println("status is \(status)")
-default:
-    "Not handled"
-}
-
+///

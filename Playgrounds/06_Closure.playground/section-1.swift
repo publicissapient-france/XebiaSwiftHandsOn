@@ -75,114 +75,16 @@ sort(names, >)
 
 
 /************************
-Nested Functions
-************************/
-
-func chooseStepFunction(increment: Int, backwards: Bool) -> (Int) -> Int {
-    func stepForward(input: Int) -> Int {
-        return input + increment    // capture 'increment'
-    }
-    
-    func stepBackward(input: Int) -> Int {
-        return input - increment
-    }
-    
-    return backwards ? stepBackward : stepForward
-}
-
-
-// Currying
-//
-func sum(a: Int, b: Int) -> Int {
-    return a+b
-}
-
-func curry(f: (Int, Int) -> Int, with param: Int) -> (Int) -> Int {
-    func g(b: Int) -> Int {
-        return f(param, b)
-    }
-    return g;
-}
-
-let partialSumWithFive = curry(sum, with:5)
-partialSumWithFive(10)
-
-
-
-/************************
 Closure (unamed)
 ************************/
 
+let city = ["Paris", "London", "Milan", "Madrid", "Berlin"]
 var suffix = ".jpg"
 
-names.map {
+city.map {
     (s: String) -> String in
     suffix = ".gif"
     return s + suffix
 }
 
 suffix          // capture are always read-write
-
-
-// Strong, Weak, Unowned capture
-//
-
-// Refresher:
-// Use strong references from owners to the objects they own
-//
-// Use weak references among objects with independent lifetimes
-//      allowed to be nil anytime, imply we use 'var' and it's an optional(?)
-//
-// Use unowned references from owned objects with the same lifetime
-//      cannot be nil, hence we can use 'let', and it's not an optional.
-//
-
-
-class strongCycleClass {
-    let text = "Ne sera jamais libéré"
-    
-    @lazy var closure: () -> String = {     // @lazy to have acces to self, var because of lazy
-        return self.text.uppercaseString    // self to acces property forced by the closure
-    }
-    
-    func use() {
-        println(closure())
-    }
-}
-
-let badObj = strongCycleClass()
-badObj.use()
-
-
-class Correct {
-    let text = "cette fois sans cycle"
-    
-    @lazy var closure: () -> String = {
-        [unowned self] in                   // Capture list, Infered type used, no (...) before 'in'
-        return self.text.uppercaseString
-    }
-    
-    func use() {
-        println(closure())
-    }
-}
-
-let obj = Correct()
-obj.use()
-
-
-// Capture List
-//
-
-class Cache { }
-let db = Cache()
-
-class C {
-    @lazy var closure: () -> () = {
-        [unowned self, weak db] in      // we can put many capture modifier
-        // ... do stuff with self and db
-        return
-    }
-}
-
-

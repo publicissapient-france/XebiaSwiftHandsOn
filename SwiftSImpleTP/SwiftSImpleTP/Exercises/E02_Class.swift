@@ -14,6 +14,7 @@ func runExercise02() {
     runExercise02_03()
     runExercise02_04()
     runExercise02_05()
+    runExercise02_06()
 }
 
 enum CarOption {
@@ -22,13 +23,19 @@ enum CarOption {
     case SpareWheel
 }
 
-class Car: Equatable {
+class Car: Equatable, Printable {
     let brand: String
     let year: Int
     let model: String
-    var distance: Int = 0
+    var distance: Int = 0 {
+    didSet {
+        if (distance > 100_000) {
+            distance = 100_000
+        }
+    }
+    }
     var options: Dictionary<CarOption, Bool>
-    var argus: Int { return 0 }
+    var argus: Int { return distance/year }
     
     init(brand: String, model: String, year: Int) {
         self.brand = brand
@@ -44,6 +51,10 @@ class Car: Equatable {
     subscript(option: CarOption) -> Bool? {
         get { return self.options[option] }
         set { self.options[option] = newValue }
+    }
+    
+    var description: String {
+    return "\(self.brand) \(self.model)"
     }
 }
 
@@ -109,4 +120,15 @@ func runExercise02_05() {
     assert(car.options.count == 2)
     assert(car.options[.Airbag] == true)
     assert(car.options[.SpareWheel] == false)
+}
+
+/**
+** this exervise is about OBERSERVERS
+** Force distance to be <= 100 000 when setted
+*/
+func runExercise02_06() {
+    var car = Car(brand: "Renault", model: "Clio")
+
+    car.distance = 101_000
+    assert(car.distance == 100_000, "Set car.distance to 100 000 when > 100 000")
 }

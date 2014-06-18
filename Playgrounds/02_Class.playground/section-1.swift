@@ -2,19 +2,16 @@
 
 import UIKit
 
-protocol Color {
-    func color() -> String
-}
-
-class Mission : Color {
-    func color() -> String  {
-            return "red"
-    }
-}
+///
 
 class Car {
+    var year: Int = 2014
+    var model: String {
+        get { return "AG200" + self.brand }
+    }
     var brand: String {
         willSet { println("Switching to a \(newValue)") }
+        didSet { println("Switched to \(self.brand) ") }
     }
     
     init(brand: String) {
@@ -22,14 +19,8 @@ class Car {
     }
 }
 
+///
+
 var seat = Car(brand: "Seat")
 seat.brand = "Clio"
-
-class Magazine {
-    var pageCount: Int = 0
-    var price: Float { return Float(self.pageCount) * 0.1 }
-}
-
-var mag = Magazine()
-mag.pageCount = 20
-println(mag.price)
+seat.model

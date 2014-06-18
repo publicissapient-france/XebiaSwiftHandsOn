@@ -49,6 +49,7 @@ func update(data: Array<String>) {
 func runExercise01_01() {
     var dict = ["OK": true, "KO": false]
     
+    dict["OK"] = false
     assert(dict["OK"] == false, "set false to key 'OK' (AFTER Dictionary initialization)")
 }
 
@@ -85,8 +86,8 @@ func runExercise01_04() {
     var myPos = Position(x: 0, y: 0)
     myPos.translate(5)
     
-    assert(myPos.x == 5, "Translate should move x of 5")
-    assert(myPos.y == 5, "Translate should move y of 5")
+    assert(myPos.x == 5, "Translate should move x by 5")
+    assert(myPos.y == 5, "Translate should move y by 5")
 }
 
 /**

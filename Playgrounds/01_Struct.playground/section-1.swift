@@ -2,23 +2,32 @@
 
 import UIKit
 
-var hello = "hello"
-var hello2 = hello
+2.succ() // Int is a Struct
 
-hello == hello2
-hello += " world"
-hello == hello2
+///
 
-var dict = ["i":0, "j":1]
-var dict2 = dict
+var car = ["price": 10_000]
 
-dict == dict2
-dict["i"] = 1
-dict == dict2
+upgradeCar(&car)
+car["price"]
 
-var array = [0,1]
-var array2 = array.copy()
+///
 
-array == array2
-array[0] = 1
-array == array2
+func upgradeCar(inout car: Dictionary<String, Int>) {
+    car["price"] = 20_000
+}
+
+///
+
+var string = "hello" + " world"
+
+///
+
+string += " \(2)" // Mutable String
+
+///
+
+let immutable = string
+//immutable += "No way"
+
+

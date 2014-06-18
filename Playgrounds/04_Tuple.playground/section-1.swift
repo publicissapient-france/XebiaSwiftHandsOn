@@ -6,28 +6,33 @@ unrelated type, "mini-struct"
 
 ************************************/
 
-// refresher
-let c = 6
+let myVal = 6
 
-()          // empty tuple (void)
-(c) == c    // one element tuple are juste simple value
-(c,c)       // "normal" tuple
+()                      // empty tuple (void)
+(myVal) == myVal        // one element tuple is just a simple value
+(myVal, myVal)          // two-element tuple
+(myVal, myVal, myVal)   // three-element tuple
 
 // accessing elements
-var tup1 = (5,6)
-tup1.0
-tup1.1
+var tuple = ("a", "b")
+tuple.0
+tuple.1
 
 // named elements
-var tup2: (a: Int, b: Int) = (5,6)
-tup2.a
-tup2.b
+var molecule: (hydrogen: Int, oxygen: Int) = (2, 1)
+molecule.hydrogen
+molecule.oxygen
 
-// idem for function params
-func ft(a: (Int, Int)) -> Int {
-    return a.0 + a.1
+// Function paramemeters
+func getPageError() -> (Int, String) {
+    return (404, "Not Found")
 }
+getPageError()
 
-func ft2(a: (b1: Int, b2: Int)) -> Int {
-    return a.b1 + a.b2
+// Enumeration
+let populationForCountry = ["France": 65700, "England": 62200, "Italy": 60920]
+
+for (country, population) in populationForCountry {
+    var info = ("\(country)s is home to \(population) people")
+    println(info)
 }

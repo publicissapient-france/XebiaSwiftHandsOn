@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EDE8DEF4-16AA-4D42-BBBB-BA353D024DE2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwiftSimpleTP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3EC59BE2-B339-4AD3-9AD8-98CF4AA0DEEF</key>
+		<string>https://github.com/viteinfinite/XebiaSwiftHandsOn.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SwiftSImpleTP/SwiftSimpleTP.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3EC59BE2-B339-4AD3-9AD8-98CF4AA0DEEF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/viteinfinite/XebiaSwiftHandsOn.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3EC59BE2-B339-4AD3-9AD8-98CF4AA0DEEF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3EC59BE2-B339-4AD3-9AD8-98CF4AA0DEEF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwiftTechEvent</string>
+		</dict>
+	</array>
+</dict>
+</plist>
