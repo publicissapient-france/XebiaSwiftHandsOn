@@ -12,6 +12,8 @@ class Mission : Color {
     }
 }
 
+///
+
 class Car {
     var brand: String {
         willSet { println("Switching to a \(newValue)") }
@@ -24,6 +26,8 @@ class Car {
 
 var seat = Car(brand: "Seat")
 seat.brand = "Clio"
+
+///
 
 class Magazine {
     var pageCount: Int = 0
