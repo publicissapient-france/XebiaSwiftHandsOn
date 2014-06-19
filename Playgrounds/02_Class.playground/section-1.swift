@@ -9,12 +9,11 @@ class Car {
         self.brand = brand
     }
 
-    var brand: String
-//    {
-//    willSet { println("Switching to a \(newValue)") }
-//    didSet { println("Switched to \(self.brand) ") }
-//    }
     var year: Int = 2014
+    var brand: String    {
+        willSet { println("Switching to a \(newValue)") }
+        didSet { println("Switched to \(self.brand) ") }
+    }
     var model: String {
     get { return "AG200" + self.brand }
     }

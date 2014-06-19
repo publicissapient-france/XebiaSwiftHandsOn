@@ -5,30 +5,26 @@ import UIKit
 /// everything is a Struct/class/enum
 2.succ()
 
-/// Immutable
+/// Copy
 
 var car = ["price": 10_000]
 
-upgradeCar(&car)
-car["price"]
-
 ///
 
-func upgradeCar(inout car: Dictionary<String, Int>) {
+func upgradeCar(var car: Dictionary<String, Int>) {
     car["price"] = 20_000
 }
+
+upgradeCar(car)
+car["price"]
 
 /// operator
 
 var string = "hello" + " world"
 
-/// interpolation
+/// Immutable
 
-string += " \(2)" // Mutable String
-
-///
-
-let immutable = string
-//immutable += "No way"
+var immutable = string
+immutable += "No way"
 
 
