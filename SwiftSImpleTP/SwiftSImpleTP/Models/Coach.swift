@@ -14,6 +14,7 @@ class Coach {
     
     var name:String?
     var lastMaintenance:NSDate?
+    var capiency:String?
     
     init() {
         

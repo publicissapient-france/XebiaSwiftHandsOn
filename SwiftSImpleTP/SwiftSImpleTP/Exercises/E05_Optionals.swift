@@ -9,89 +9,102 @@
 import Foundation
 
 func runExercise05() {
-//    runExercise05_00()
+    runExercise05_00()
     runExercise05_01()
-//    runExercise05_02()
+    runExercise05_02()
     runExercise05_03()
     runExercise05_04()
-    runExercise05_05()
-//    runExercise05_06()
-    runExercise05_07()
 }
 
 
 func runExercise05_00() {
-//    var hello:String
-//    println(hello)
+    // Let's consider the following Obj-C code
+    //
+    // id hello;
+    // NSLog(@"%@", hello);
     
-//    id hello;
-//    NSLog(@"%@", hello);
+    // How can you translate it to Swift?
+    // Would that work?
+    
+    // @UNCOMMENT ME AND TRY
+    // var hello:String
+    // println(hello)
 }
 
 
 func runExercise05_01() {
     var hello:String? = "Hello, Swift"
     
-    // Wrapped
-    println(hello)
+    // @TODO set answer to the unwrapped value of the variable hello
     
-    // Unwrapped
-    println(hello!)
+    answer = hello!
+    
+    // Validation
+    validateE5401(answer)
 }
 
 
+// Chaining
 func runExercise05_02() {
-    var hello:String?
+    var myTrain:Train?
     
-    // Wrapped
-    println(hello)
+    // @TODO verify if the restaurant coach of the train has a name
+    // If yes, set answer to "NO NAME"
+    // Else, set answer to the name of the coach
     
-    // Unwrapped: generate an error
-    println(hello!)
+    var restaurantCoachName = myTrain?.restaurantCoach?.name
+    if !restaurantCoachName {
+        answer = "NO NAME"
+    } else {
+        answer = restaurantCoachName!
+    }
+    
+    // Validation
+    validateE5402(answer)
 }
 
+
+// Chaining and inline
 func runExercise05_03() {
-    var myTrain:Train?
-    var restaurantCoachName = myTrain?.restaurantCoach?.name
-    if restaurantCoachName {
-        println(restaurantCoachName)
+    var myTrain:Train? = Train()
+    myTrain?.createItalianRestaurantCoach()
+    
+    // @TODO verify if the restaurant coach of the train has a name
+    // If yes, set answer to "NO NAME"
+    // Else, set answer to the name of the coach
+    // Use inline instantiation
+    
+    if let restaurantCoachName = myTrain?.restaurantCoach?.name {
+        answer = restaurantCoachName
     }
+    
+    // Validation
+    validateE5403(answer)
 }
 
 
 func runExercise05_04() {
-    var myTrain:Train? = Train()
-    myTrain?.createUnnamedRestaurantCoach()
-    if let restaurantCoachName = myTrain?.restaurantCoach?.name {
-        println(restaurantCoachName)
-    }
-}
-
-
-func runExercise05_05() {
-    var myTrain:Train? = Train()
-    myTrain?.createItalianRestaurantCoach()
-    if let restaurantCoachName = myTrain?.restaurantCoach?.name {
-        println(restaurantCoachName)
-    }
-}
-
-
-func runExercise05_06() {
-    var myTrain:Train? = Train()
-    println(myTrain?.restaurantCoach!.name)
-}
-
-
-func runExercise05_07() {
-    var myTrain:Train = Train()
-    myTrain.createFrenchRestaurantCoach()
+    var myTrain:Train = getFrenchRestaurantTrain()
     
-    // Auto-inferred
-    var daLuigiCoach = myTrain.findCoachWithName("Da Luigi")
-    println(daLuigiCoach)
+    // @TODO retrieve the capiency of the restaurant coach named "Chez JP"
+    // Use inline instantiation and the 'findCoachWithName' method provided
     
-    if let chezJeanPierreCoachUnwrapped = myTrain.findCoachWithName("Chez Jean-Pierre")?.name {
-        println("The coach you're looking for is \(chezJeanPierreCoachUnwrapped)")
+    if let capiencyUnwrapped = findCoachWithName(myTrain, "Chez JP")?.capiency {
+        answer = capiencyUnwrapped
     }
+    
+    // Validation
+    validateE5404(answer)
+}
+
+func findCoachWithName(train:Train, name:String) -> Coach? {
+    
+    // @TODO Implement this method
+    
+    for c in train.coaches {
+        if c?.name? == name {
+            return c
+        }
+    }
+    return nil
 }

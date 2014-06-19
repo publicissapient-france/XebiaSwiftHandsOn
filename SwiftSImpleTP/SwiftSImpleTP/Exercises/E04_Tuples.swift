@@ -38,10 +38,12 @@ func runExercise04_01() {
     
     // @TODO: get the air conditioning status (recentCoach.getAirConditioningStatus()
     // and if it is not active, set 'answer' to "AIR CONDITIONING ON"
-    var (active, reason) = recentCoach.getAirConditioningStatus()
-    if (active) {
-        answer = "AIR CONDITIONING ON"
-    }
+    
+    
+    
+    // Write your code here...
+    
+    
     
     // Validation
     validateE0401(answer)
@@ -57,10 +59,11 @@ func runExercise04_02() {
     // Then set 'answer' to "AIR CONDITIONING OFF: <Fault reason>", ex "AIR CONDITIONING OFF: Temperature fault"
     // Try to write 4 lines of code or less ;)
     
-    var (active, reason) = oldCoach.getAirConditioningStatus()
-    if let reasonU = reason {
-        answer = "AIR CONDITIONING OFF: \(reasonU)"
-    }
+    
+    
+    // Write your code here...
+    
+    
     
     // Validation
     validateE0402(answer)    
@@ -77,10 +80,11 @@ func runExercise04_03() {
     // Then set 'answer' to "AIR CONDITIONING OFF: <Fault reason>", ex "AIR CONDITIONING OFF: Temperature fault"
     // Try to write 3 lines of code or less ;)
     
-    // Or
-    if recentCoach.getAirConditioningStatus().active {
-        answer = "AIR CONDITIONING ON"
-    }
+    
+    
+    // Write your code here...
+    
+    
     
     // Validation
     validateE0403(answer)
@@ -95,11 +99,11 @@ func runExercise04_04() {
     // @TODO: Use tuples to retrieve the name of the passenger who sits
     // next to my seat
     
-    for (seat, name) in myTravelMates {
-        if abs(seat - mySeat) == 1 {
-            answer = "\(name) is next to me"
-        }
-    }
+    
+    
+    // Write your code here...
+    
+    
     
     // Validation
     validateE0404(answer)
