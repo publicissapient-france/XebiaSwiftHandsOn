@@ -26,7 +26,7 @@ func runExercise06_01() {
     
 // TODO
     // use closure and 'map' instead of for-in
-    
+    upper = array.map({$0.uppercaseString})
     
     
     println("uppercase array: \(upper)")
@@ -38,7 +38,9 @@ func runExercise06_02() {
     
 // TODO
     // filter out word begining with letter 'c'
-    
+    answer = array.filter {
+        return !($0.hasPrefix("c"))
+    }
     
     println("array without word begining by 'c': \(answer)")
 }
@@ -49,7 +51,11 @@ func runExercise06_03() {
 
 // TODO
     // keep only jpg, correct name to be all lowercase
-    
+    answer = array.map {
+        $0.lowercaseString
+    }.filter {
+        $0.hasSuffix(".jpg")
+    }
     
     println("only jpg: \(answer)")
 }
@@ -67,19 +73,30 @@ func runExercise06_04() {
     
 // TODO
     // make a factory for incrementor that accept an argument, the increment, instead of +1
-    // func makeIncrementorBis(...
-    // ...
+    func makeIncrementorBis(n: Int) -> (Int) -> Int {
+        let incrementor = {
+            (a: Int) -> Int in
+            return a + n    // capture the argument
+        }
+        return incrementor
+    }
     
-    //let incBis = makeIncrementorBis(5)
-    //println("Incrementor (+N): \(incBis(7))")
+    let incBis = makeIncrementorBis(5)
+    println("Incrementor (+N): \(incBis(7))")
     
 // TODO
     // make a factory for an incrementor that keep a running total. ie: every time you run it continue to increase from where it was
-    //func makeIncrementorTer(...
-    // ...
+    func makeIncrementorTer(n: Int) -> () -> Int {
+        var total = 0
+        func incrementor() -> Int {
+            total += n      // capture the arg, and capture a value from its enclosing function
+            return total
+        }
+        return incrementor
+    }
     
-    //let incTer = makeIncrementorTer(5)
-    //println("Incrementor (keep total): \(incTer()), \(incTer()), \(incTer()), ...")
+    let incTer = makeIncrementorTer(5)
+    println("Incrementor (keep total): \(incTer()), \(incTer()), \(incTer()), ...")
 }
 
 

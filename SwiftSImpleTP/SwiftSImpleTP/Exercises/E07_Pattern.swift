@@ -22,10 +22,16 @@ func runExercise07_01() {
 
 // TODO
     // switch on train status. If delayed print the delay
-    
-
-
-
+    switch rerA.status {
+        case .OnTime:
+            println("On time!")
+        
+        case .Delayed(let minute, _):
+            println("delayed by \(minute) minutes")
+        
+        case .Canceled:
+            println("Canceled...")
+    }
 }
 
 // Where Clause
@@ -43,11 +49,29 @@ func runExercise07_02() {
     
 // TODO
     // switch on all train status: delayed by 1min, less than 20, more than 20 should print distinc text on console
-    // let answer: String[] = trains.map...
-    // ...
-    
-    
-    // println("Where Clause: \(answer)")
+    let answer: String[] = trains.map {
+        (train: Train) -> String in
+        switch train.status {
+            case .OnTime:
+                return "On time!"
+            
+            case .Delayed(1, _):
+                return "nearly on time"
+            
+            case .Delayed(2..20, _):
+                return "almost on time"
+            
+            case .Delayed(let retard, _) where retard > 20:
+                return "OK I'm late!"
+            
+            case .Canceled:
+                return "Canceled..."
+            
+            default:
+                return "RAS"
+        }
+    }
+    println("Where Clause: \(answer)")
 }
 
 // Pattern Compose
@@ -66,10 +90,28 @@ func runExercise07_03() {
     
 // TODO
     // switch on vacation status *and* train status. Separate small (<60min) and large(>=60min) delay
-    // let answer: String[] = vacs.map...
-    // ...
-        
-
-    //println("Pattern Compose: \(answer)")
+    let answer: String[] = vacs.map {
+        (status: VacationStatus) -> String in
+        switch status {
+            case .Relaxing(_):
+                return "cool time"
+            
+            case .Traveling(.OnTime):
+                return "Je vais être à l'heure"
+            
+            case .Traveling(.Delayed(let retard, _)) where retard < 60:
+                return "Je serais en retard"
+            
+            case .Traveling(.Delayed(let retard, _)) where retard >= 60:
+                return "vraiment en retard"
+            
+            case .Traveling(.Canceled):
+                return "OMG!"
+            
+            default:
+                return ""
+        }
+    }
+    println("Pattern Compose: \(answer)")
 }
 
