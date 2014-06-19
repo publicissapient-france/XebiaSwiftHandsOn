@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420F305F19525ED8007599EB /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420F305E19525ED8007599EB /* Validations.swift */; };
 		421A52E4194F741400DB0F30 /* Coach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421A52E2194F741400DB0F30 /* Coach.swift */; };
 		421A52E5194F741400DB0F30 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421A52E3194F741400DB0F30 /* Train.swift */; };
 		421A52E7194F744000DB0F30 /* E05_Optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421A52E6194F744000DB0F30 /* E05_Optionals.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		420F305E19525ED8007599EB /* Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		421A52E2194F741400DB0F30 /* Coach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coach.swift; sourceTree = "<group>"; };
 		421A52E3194F741400DB0F30 /* Train.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		421A52E6194F744000DB0F30 /* E05_Optionals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E05_Optionals.swift; sourceTree = "<group>"; };
@@ -49,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		420F305D19525EC7007599EB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				420F305E19525ED8007599EB /* Validations.swift */,
+			);
+			name = Helpers;
+			path = SwiftSimpleTP/Helpers;
+			sourceTree = SOURCE_ROOT;
+		};
 		421A52E0194F740800DB0F30 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +103,7 @@
 		42414F4119485D4F00E61AAF /* SwiftSimpleTP */ = {
 			isa = PBXGroup;
 			children = (
+				420F305D19525EC7007599EB /* Helpers */,
 				421A52E1194F741400DB0F30 /* Models */,
 				421A52E0194F740800DB0F30 /* Exercises */,
 				42414F4419485D4F00E61AAF /* AppDelegate.swift */,
@@ -186,6 +198,7 @@
 				5091470B194F794F0089BC57 /* E07_Pattern.swift in Sources */,
 				50914709194F78A70089BC57 /* E06_Closure.swift in Sources */,
 				421A52ED194FA79900DB0F30 /* E04_Tuples.swift in Sources */,
+				420F305F19525ED8007599EB /* Validations.swift in Sources */,
 				49FCD82E194F7FC20069ABD9 /* E01_Struct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

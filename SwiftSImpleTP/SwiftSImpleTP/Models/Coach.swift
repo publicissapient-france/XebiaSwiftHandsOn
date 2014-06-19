@@ -33,6 +33,6 @@ class Coach {
                 return (true, nil)
             }
         }
-        return (false, "A/C is out of service. Please use your bike.")
+        return (false, "Electric fault")
     }
 }
