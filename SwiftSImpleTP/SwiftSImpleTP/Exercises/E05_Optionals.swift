@@ -61,7 +61,7 @@ func runExercise05_02() {
 }
 
 
-// Chaining and inline
+// Chaining and optional binding
 func runExercise05_03() {
     var myTrain:Train? = Train()
     myTrain?.createItalianRestaurantCoach()

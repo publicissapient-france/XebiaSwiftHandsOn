@@ -11,7 +11,7 @@ import Foundation
 var answer:String = ""
 
 func runExercise04() {
-//    runExercise04_00()
+    runExercise04_00()
     runExercise04_01()
     runExercise04_02()
     runExercise04_03()
@@ -50,7 +50,7 @@ func runExercise04_01() {
 }
 
 
-// Type inference and inline unwrapping
+// Type inference and optional binding
 func runExercise04_02() {
     let oldCoach = getOldCoach()
     
