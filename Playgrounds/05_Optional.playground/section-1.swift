@@ -22,18 +22,20 @@ switch optionalString {
 // Unwrapping
 var optionalStringUnwrapped = optionalString!
 
-var emtpyName: String? = nil
-var emptyNameUnwrapped = emtpyString! // Error!
+//var emptyName: String? = nil
+//var emptyNameUnwrapped = emptyName! // Error!
 
 // Unwrapping
-if optionalString {
-    var unwrapped = optionalString!
-    var greeting = "\(optionalString), Swifter!"
+var jamiesHand:String? = "hand"
+if jamiesHand {
+    var jamiesHandUnwrapped = jamiesHand!
+    var gotS03E02 = "Jamie has an \(jamiesHandUnwrapped)!"
 }
 
-// Unwrapping, fast
-if let optionalStringUnwrapped = optionalString {
-    var greeting = "\(optionalString), Swifter!"
+// Unwrapping with binding
+var queen:String? = "Queen Elizabeth II"
+if let queenUnwrapped = queen {
+    var royal = "HRM \(queenUnwrapped)"
 }
 
 // Chaining
