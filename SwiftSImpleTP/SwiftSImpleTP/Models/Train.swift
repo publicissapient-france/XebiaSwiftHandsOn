@@ -33,17 +33,10 @@ class Train {
     }
     
     func createFrenchRestaurantCoach() {
-        self.restaurantCoach = Coach(name: "Chez Jean-Pierre")
+        var restaurantCoach = Coach(name: "Chez JP")
+        restaurantCoach.capiency = "50"
+        self.restaurantCoach = restaurantCoach
         self.coaches.append(self.restaurantCoach)
-    }
-    
-    func findCoachWithName(name:String) -> Coach? {
-        for c in self.coaches {
-            if c?.name? == name {
-                return c
-            }
-        }
-        return nil
     }
 }
 
