@@ -52,12 +52,9 @@ func runExercise05_02() {
     // If yes, set answer to "NO NAME"
     // Else, set answer to the name of the coach
     
-    var restaurantCoachName = myTrain?.restaurantCoach?.name
-    if !restaurantCoachName {
-        answer = "NO NAME"
-    } else {
-        answer = restaurantCoachName!
-    }
+    
+    // Write your code here...
+    
     
     // Validation
     validateE5402(answer)
@@ -74,9 +71,11 @@ func runExercise05_03() {
     // Else, set answer to the name of the coach
     // Use inline instantiation
     
-    if let restaurantCoachName = myTrain?.restaurantCoach?.name {
-        answer = restaurantCoachName
-    }
+    
+    
+    // Write your code here...
+    
+    
     
     // Validation
     validateE5403(answer)
@@ -89,9 +88,11 @@ func runExercise05_04() {
     // @TODO retrieve the capiency of the restaurant coach named "Chez JP"
     // Use inline instantiation and the 'findCoachWithName' method provided
     
-    if let capiencyUnwrapped = findCoachWithName(myTrain, "Chez JP")?.capiency {
-        answer = capiencyUnwrapped
-    }
+    
+    
+    // Write your code here...
+    
+    
     
     // Validation
     validateE5404(answer)
@@ -101,10 +102,11 @@ func findCoachWithName(train:Train, name:String) -> Coach? {
     
     // @TODO Implement this method
     
-    for c in train.coaches {
-        if c?.name? == name {
-            return c
-        }
-    }
+    
+    
+    // Write your code here...
+    
+    
+    
     return nil
 }
