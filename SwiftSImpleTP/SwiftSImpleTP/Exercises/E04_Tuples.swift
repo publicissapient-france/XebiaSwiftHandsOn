@@ -8,14 +8,14 @@
 
 import Foundation
 
+var answer:String = ""
+
 func runExercise04() {
-    runExercise04_00()
+//    runExercise04_00()
     runExercise04_01()
     runExercise04_02()
     runExercise04_03()
     runExercise04_04()
-    
-    runExercise04_05()
 }
 
 
@@ -24,74 +24,84 @@ func runExercise04_00() {
     // We would like to know if a coach has or not an air conditioning system
     // and, if not, we would like to know the reason
     
-    // In objective-c, you could create a struct or a class wrapping the two information
+    // In objective-c, you could create a struct or a class wrapping the two pieces of info
     // ... but in Swift?
     
-    var coach = Coach()
+    let coach = Coach()
     coach.getAirConditioningStatus()
 }
 
 
-// Basic tuple variable
+// Named tuple variable
 func runExercise04_01() {
-    var oldCoach = Coach(lastMaintenance:NSDate(timeIntervalSince1970: 0))
+    let recentCoach = getRecentCoach()
     
-    var (active:Bool, reason:String?) = oldCoach.getAirConditioningStatus()
-    if active {
-        println("Cool, I will not sweat the hell out of me!")
-    } else {
-        println("It's gonna be a hot journey")
-    }
-}
-
-
-// Type inference
-func runExercise04_02() {
-    var recentCoach = Coach(lastMaintenance: NSDate(timeIntervalSinceNow: 0))
-    
+    // @TODO: get the air conditioning status (recentCoach.getAirConditioningStatus()
+    // and if it is not active, set 'answer' to "AIR CONDITIONING ON"
     var (active, reason) = recentCoach.getAirConditioningStatus()
-    if let reasonU = reason {
-        println("The A/C is not working because of the following reason: \(reasonU)")
-    } else {
-        println("There's no apparent reason for the A/C not to work")
+    if (active) {
+        answer = "AIR CONDITIONING ON"
     }
-}
-
-
-// Inference
-func runExercise04_03() {
-    var oldCoach = Coach(lastMaintenance: NSDate(timeIntervalSince1970: 0))
-    var combinedStatus = oldCoach.getAirConditioningStatus()
     
-    if let reasonU = combinedStatus.1 {
-        println("The A/C does not work because of \(reasonU)")
-    }
+    // Validation
+    validateE0401(answer)
 }
+
+
+// Type inference and inline unwrapping
+func runExercise04_02() {
+    let oldCoach = getOldCoach()
+    
+    // @TODO: get the air conditioning status (oldCoach.getAirConditioningStatus()
+    // and unwrap the value.
+    // Then set 'answer' to "AIR CONDITIONING OFF: <Fault reason>", ex "AIR CONDITIONING OFF: Temperature fault"
+    // Try to write 4 lines of code or less ;)
+    
+    var (active, reason) = oldCoach.getAirConditioningStatus()
+    if let reasonU = reason {
+        answer = "AIR CONDITIONING OFF: \(reasonU)"
+    }
+    
+    // Validation
+    validateE0402(answer)    
+}
+
 
 // Positioning
-func runExercise04_04() {
-    var recentCoach = Coach(lastMaintenance: NSDate(timeIntervalSinceNow: 0))
-    var combinedStatus = recentCoach.getAirConditioningStatus()
-    
-    if (combinedStatus.active) {
-        println("The A/C is working!")
-    }
+func runExercise04_03() {
+    let recentCoach = getRecentCoach()
+
+    // @TODO: similarly to the previous exercise:
+    // get the air conditioning status (recentCoach.getAirConditioningStatus()
+    // and unwrap the value.
+    // Then set 'answer' to "AIR CONDITIONING OFF: <Fault reason>", ex "AIR CONDITIONING OFF: Temperature fault"
+    // Try to write 3 lines of code or less ;)
     
     // Or
     if recentCoach.getAirConditioningStatus().active {
-        println("The A/C is working, but you already know that!")
+        answer = "AIR CONDITIONING ON"
     }
+    
+    // Validation
+    validateE0403(answer)
 }
 
 
 // Dictionaries
-func runExercise04_05() {
-    var mySeat = 24
-    var myTravelMates = [25: "JC", 26: "Pascal", 27: "Simone"]
+func runExercise04_04() {
+    let mySeat = 24
+    let myTravelMates = [25: "Jean", 26: "Nicolas", 27: "François"] // Seat: Name
+    
+    // @TODO: Use tuples to retrieve the name of the passenger who sits
+    // next to my seat
+    
     for (seat, name) in myTravelMates {
         if abs(seat - mySeat) == 1 {
-            println("\(name) is seated next to me. Hope he doesn't smell bad!")
+            answer = "\(name) is next to me"
         }
     }
+    
+    // Validation
+    validateE0404(answer)
 }
 
