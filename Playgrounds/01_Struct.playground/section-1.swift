@@ -2,9 +2,10 @@
 
 import UIKit
 
-2.succ() // Int is a Struct
+/// everything is a Struct/class/enum
+2.succ()
 
-///
+/// Immutable
 
 var car = ["price": 10_000]
 
@@ -17,11 +18,11 @@ func upgradeCar(inout car: Dictionary<String, Int>) {
     car["price"] = 20_000
 }
 
-///
+/// operator
 
 var string = "hello" + " world"
 
-///
+/// interpolation
 
 string += " \(2)" // Mutable String
 
