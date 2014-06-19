@@ -65,10 +65,6 @@ sort(names, {s1, s2 in s1 > s2})
 // 4) shorhand argument names
 sort(names, {$0 > $1})
 
-sort(names) {   // trailing closure syntax (API must be designed with this in mind!)
-    $0 > $1     // useful for long closure, not much here
-}
-
 // 5) operator functions
 sort(names, >)
 
